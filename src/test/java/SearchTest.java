@@ -1,26 +1,15 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
-
-import java.io.File;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SearchTest {
+public class SearchTest extends BaseTest {
 
     @Test
     public void openGoogleChromeTest() {
 
-        File file = new File("src/test/resources/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
-
-        WebDriver driver = new ChromeDriver();
-
-        driver.get("https://google.com");
-        System.out.println(driver.getTitle());
 
         WebElement searchField = driver.findElement(By.xpath("//input[@class='gLFyf gsfi']"));
         assertThat(searchField.isDisplayed()).as("Google search field is not displayed").isTrue();
@@ -43,7 +32,6 @@ public class SearchTest {
         assertThat(serachREsult2.isDisplayed()).as("Element hasn't been displayed").isTrue();
         assertThat(serachREsult2.getText()).as("Search result is wrong").isEqualTo("WebDriver :: Documentation for Selenium");
         assertThat(serachREsult2.getAttribute("class")).as("Wrong attribyte text").contains("LC20lb DKV0Md");
-//
 
     }
 }
