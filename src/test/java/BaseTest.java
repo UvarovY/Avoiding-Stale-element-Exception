@@ -1,8 +1,8 @@
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
-
-import java.io.File;
+import utils.Browser;
+import utils.DriverFactory;
+import utils.DriverSettings;
 
 public abstract class BaseTest {
 
@@ -11,19 +11,17 @@ public abstract class BaseTest {
 
     @BeforeClass
     public void setUp() {
-        File file = new File("src/test/resources/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
-        driver = new ChromeDriver();
+        driver = DriverFactory.getDriver(Browser.CHROME);
         driver.get("https://google.com");
     }
 
     @BeforeMethod
-    public void driverSettings(){
-        driver.manage().window().maximize();
+    public void drSettings() {
+      driver = DriverFactory.getDrSettings(DriverSettings.FALSE);
     }
 
     @AfterMethod
-    public void goBack(){
+    public void goBack() {
         driver.navigate().back();
     }
 
@@ -34,7 +32,9 @@ public abstract class BaseTest {
     }
 
     @DataProvider(name = "Data Provider")
-    public Object [][] dataProviderMethod(){
-        return new Object[][]{{"selenium java"}, {"selenium javascript"}};
+    public Object[] dataProviderMethod() {
+        return new Object[]{"selenium java"};
+        //, {"selenium javascript"}
+
     }
 }
