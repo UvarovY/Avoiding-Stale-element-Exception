@@ -32,9 +32,7 @@ public abstract class BaseTest {
     }
 
     @DataProvider(name = "Data Provider")
-    public Object[] dataProviderMethod() {
-        return new Object[]{"selenium java"};
-        //, {"selenium javascript"}
-
+    public Object[][] dataProviderMethod() {
+        return new Object[][]{{"selenium java"}, {"selenium javascript"}};
     }
 }
