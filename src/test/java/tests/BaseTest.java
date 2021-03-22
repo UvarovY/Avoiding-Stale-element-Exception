@@ -1,3 +1,5 @@
+package tests;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 import utils.Browser;
@@ -33,6 +35,6 @@ public abstract class BaseTest {
 
     @DataProvider(name = "Data Provider")
     public Object[][] dataProviderMethod() {
-        return new Object[][]{{"selenium java"}, {"selenium javascript"}};
+        return new Object[][]{{"selenium java"}, {"seleniumgit "}};
     }
 }
