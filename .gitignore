@@ -1,2 +1,4 @@
 /.git
-/.idea/workspace.xml
+/.idea
+target
+*.iml
