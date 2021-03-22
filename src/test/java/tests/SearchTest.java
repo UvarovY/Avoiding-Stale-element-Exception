@@ -2,6 +2,7 @@ package tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import tests.BaseTest;
@@ -14,6 +15,8 @@ public class SearchTest extends BaseTest {
 
     @Test(dataProvider = ("Data Provider"))
     public void openGoogleChromeTest(String searchText) throws InterruptedException {
+
+        WebDriver driver = BaseTest.getDriver();
 
         WebElement searchField = driver.findElement(By.xpath("//input[@class='gLFyf gsfi']"));
         assertThat(searchField.isDisplayed()).as("Google search field is not displayed").isTrue();

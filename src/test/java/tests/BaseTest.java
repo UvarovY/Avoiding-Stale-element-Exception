@@ -8,8 +8,11 @@ import utils.DriverSettings;
 
 public abstract class BaseTest {
 
+    private static WebDriver driver;
 
-    protected WebDriver driver;
+    public static WebDriver getDriver() {
+        return driver;
+    }
 
     @BeforeClass
     public void setUp() {
@@ -35,6 +38,6 @@ public abstract class BaseTest {
 
     @DataProvider(name = "Data Provider")
     public Object[][] dataProviderMethod() {
-        return new Object[][]{{"selenium java"}, {"seleniumgit "}};
+        return new Object[][]{{"selenium java"}, {"selenium javascript"}};
     }
 }
