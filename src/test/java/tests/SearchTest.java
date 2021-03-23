@@ -9,10 +9,7 @@ public class SearchTest extends BaseTest {
 
         steps.executeSearchByKeyword(searchText)
                 .verifyThatTopResultContainsCorrectText("Webdriver")
-                .verifyThatTopResultContainsProperAttribute("");
-
-
-
+                .verifyThatTopResultContainsProperAttribute("LC20lb DKV0Md");
 
     }
 
