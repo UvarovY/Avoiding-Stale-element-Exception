@@ -11,6 +11,7 @@ public abstract class BasePage {
     BasePage(){
         this.driver = BaseTest.getDriver();
         PageFactory.initElements(driver,this);
+        //ленивая инициализация, каждая старнциа наследует конструктор
     }
 
 
