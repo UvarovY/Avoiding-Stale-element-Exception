@@ -1,33 +1,31 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class SearchPage extends BasePage {
 
+    @FindBy(xpath = "//input[@class='gLFyf gsfi']")
+    private WebElement searchField;
+
     public SearchPage() {
         super();
     }
 
-    private By searchField = By.xpath("//input[@class='gLFyf gsfi']");
+    public void fillTheSearchField(String textToSearch) {
 
-    public void fillTheSearchField(String textToSearch){
-        WebElement searchFieldElement = driver.findElement(searchField);
-        assertThat(searchFieldElement.isDisplayed()).as("Google search field is not displayed").isTrue();
-        searchFieldElement.click();
-        searchFieldElement.clear();
-        searchFieldElement.sendKeys(textToSearch);
+        assertThat(searchField.isDisplayed()).as("Google search field is not displayed").isTrue();
+        searchField.click();
+        searchField.clear();
+        searchField.sendKeys(textToSearch);
     }
 
-    public void pressEnter(){
-        WebElement searchFieldElement = driver.findElement(searchField);
-        searchFieldElement.sendKeys(Keys.RETURN);
+    public void pressEnter() {
+        searchField.sendKeys(Keys.RETURN);
     }
-
-
 
 
 }
