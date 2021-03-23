@@ -2,6 +2,8 @@ package tests;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
+import pages.SearchPage;
+import steps.SearchSteps;
 import utils.Browser;
 import utils.DriverFactory;
 import utils.DriverSettings;
@@ -9,6 +11,7 @@ import utils.DriverSettings;
 public abstract class BaseTest {
 
     private static WebDriver driver;
+    protected SearchSteps steps;
 
     public static WebDriver getDriver() {
         return driver;
@@ -18,6 +21,7 @@ public abstract class BaseTest {
     public void setUp() {
         driver = DriverFactory.getDriver(Browser.CHROME);
         driver.get("https://google.com");
+        steps = new SearchSteps();
     }
 
     @BeforeMethod
