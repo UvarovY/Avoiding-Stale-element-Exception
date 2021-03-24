@@ -2,6 +2,7 @@ package utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import java.io.File;
@@ -28,6 +29,11 @@ public class DriverFactory {
                 System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
                 driver = new InternetExplorerDriver();
                 break;
+
+            case FIREXOF:
+                file = new File(DRIVER_PATH + "geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", file.getAbsolutePath());
+                driver = new FirefoxDriver();
 
             default:
                 file = new File(DRIVER_PATH + "chromedriver.exe");

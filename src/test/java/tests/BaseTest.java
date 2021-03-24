@@ -17,6 +17,7 @@ public abstract class BaseTest {
         return driver;
     }
 
+
     @BeforeClass
     public void setUp() {
         driver = DriverFactory.getDriver(Browser.CHROME);
@@ -38,7 +39,7 @@ public abstract class BaseTest {
     @AfterClass
     public void tearDown() {
         driver.quit();
-    }
+           }
 
     @DataProvider(name = "Data Provider")
     public Object[][] dataProviderMethod() {
