@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10711fa1-0355-47a7-8807-6e2b9ddfcf60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Browser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/framework.propertis" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/SearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/SearchTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Browser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Browser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/DriverFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/DriverFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/DriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/DriverFactory.class" afterDir="false" />
-    </list>
+    <list default="true" id="10711fa1-0355-47a7-8807-6e2b9ddfcf60" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,18 +32,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-368" />
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/utils/PropertyReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="396">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -226,7 +215,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1616606038301" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1616766373034" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -466,6 +455,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/framework.propertis">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/framwork.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/PropertyReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -488,30 +501,6 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-368" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/framework.propertis">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/framwork.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/PropertyReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
   </component>
