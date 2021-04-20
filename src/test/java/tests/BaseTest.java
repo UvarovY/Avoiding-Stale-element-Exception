@@ -2,11 +2,9 @@ package tests;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
-import pages.SearchPage;
 import steps.SearchSteps;
 import utils.Browser;
 import utils.DriverFactory;
-import utils.DriverSettings;
 
 public abstract class BaseTest {
 
@@ -25,11 +23,7 @@ public abstract class BaseTest {
         steps = new SearchSteps();
     }
 
-    @BeforeMethod
-    public void drSettings() {
-      driver = DriverFactory.getDrSettings(DriverSettings.FALSE);
-    }
-
+    
     @AfterMethod
     public void goBack() {
         driver.navigate().back();
