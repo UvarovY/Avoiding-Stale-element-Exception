@@ -8,11 +8,9 @@ public abstract class BasePage {
 
     protected WebDriver driver;
 
-    BasePage(){
+    BasePage() {
         this.driver = BaseTest.getDriver();
-        PageFactory.initElements(driver,this);
-        //ленивая инициализация, каждая старнциа наследует конструктор
+        PageFactory.initElements(driver, this);
+        //ленивая инициализация.
     }
-
-
 }

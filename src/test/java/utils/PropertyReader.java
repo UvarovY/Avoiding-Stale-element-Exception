@@ -5,15 +5,24 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+import static java.lang.System.getProperty;
+
 public class PropertyReader {
 
+   //public static String getUrl(){ return getProperty("url"); }
+
+   // public static Browser getBrowser(){
+     //   return Browser.valueOf(getProperty("browser"));
+   // }
+
+
     private static String getSystemProperty(String propertyName) {
-        if (System.getProperty(propertyName) == null) {
+        if (getProperty(propertyName) == null) {
             return getPropertyFromFile(propertyName);
 
         } else {
 
-            return System.getProperty(propertyName);
+            return getProperty(propertyName);
         }
     }
 
