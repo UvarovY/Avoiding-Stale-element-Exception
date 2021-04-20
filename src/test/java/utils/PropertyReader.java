@@ -5,24 +5,21 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import static java.lang.System.getProperty;
 
 public class PropertyReader {
 
-   //public static String getUrl(){ return getProperty("url"); }
+   public static String getUrl(){
+       return getProperty("url"); }
 
-   // public static Browser getBrowser(){
-     //   return Browser.valueOf(getProperty("browser"));
-   // }
+   public static Browser getBrowser(){
+       return Browser.valueOf(getProperty("browser"));
+   }
 
-
-    private static String getSystemProperty(String propertyName) {
-        if (getProperty(propertyName) == null) {
+    private static String getProperty(String propertyName) {
+        if (System.getProperty(propertyName) == null) {
             return getPropertyFromFile(propertyName);
-
         } else {
-
-            return getProperty(propertyName);
+            return System.getProperty(propertyName);
         }
     }
 
@@ -31,9 +28,8 @@ public class PropertyReader {
         Properties properties = new Properties();
         InputStream input = null;
 
-
         try {
-            input = new FileInputStream("src/tet/resources/framework.propeties");
+            input = new FileInputStream("src/test/resources/framework.propeties");
             properties.load(input);
 
         } catch (IOException ex) {

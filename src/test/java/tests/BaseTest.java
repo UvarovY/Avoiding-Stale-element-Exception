@@ -5,6 +5,7 @@ import org.testng.annotations.*;
 import steps.SearchSteps;
 import utils.Browser;
 import utils.DriverFactory;
+import utils.PropertyReader;
 
 public abstract class BaseTest {
 
@@ -18,12 +19,12 @@ public abstract class BaseTest {
 
     @BeforeClass
     public void setUp() {
-        driver = DriverFactory.getDriver(Browser.CHROME);
-        driver.get("https://google.com");
+        driver = DriverFactory.getDriver(PropertyReader.getBrowser());
+        driver.get(PropertyReader.getUrl());
         steps = new SearchSteps();
     }
 
-    
+
     @AfterMethod
     public void goBack() {
         driver.navigate().back();

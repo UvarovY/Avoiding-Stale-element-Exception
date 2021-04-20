@@ -5,11 +5,10 @@
     <classes>
       <class name="tests.SearchTest">
         <methods>
-          <include name="drSettings"/>
           <include name="tearDown"/>
           <include name="goBack"/>
           <include name="setUp"/>
-          <include name="openGoogleChromeTest"/>
+          <include name="openGoogleChromeTest" invocation-numbers="1"/>
         </methods>
       </class> <!-- tests.SearchTest -->
     </classes>

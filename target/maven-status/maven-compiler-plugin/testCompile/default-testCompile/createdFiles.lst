@@ -8,5 +8,4 @@ tests\BaseTest.class
 pages\SearchResultsPage.class
 pages\SearchPage.class
 utils\PropertyReader.class
-utils\DriverSettings.class
 steps\SearchResultsSteps.class
