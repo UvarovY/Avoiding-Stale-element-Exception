@@ -8,7 +8,7 @@
           <include name="tearDown"/>
           <include name="goBack"/>
           <include name="setUp"/>
-          <include name="openGoogleChromeTest" invocation-numbers="1"/>
+          <include name="openGoogleChromeTest"/>
         </methods>
       </class> <!-- tests.SearchTest -->
     </classes>

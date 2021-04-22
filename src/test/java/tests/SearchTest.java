@@ -8,8 +8,7 @@ public class SearchTest extends BaseTest {
     public void openGoogleChromeTest(String searchText) throws InterruptedException {
 
         steps.executeSearchByKeyword(searchText)
-                .verifyThatTopResultContainsCorrectText("Webdriver")
+                .verifyThatTopResultContainsCorrectText("Selenium Webdriver")
                 .verifyThatTopResultContainsProperAttribute("LC20lb DKV0Md");
     }
-
 }

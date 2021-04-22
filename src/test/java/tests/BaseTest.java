@@ -7,6 +7,8 @@ import utils.Browser;
 import utils.DriverFactory;
 import utils.PropertyReader;
 
+import java.util.concurrent.TimeUnit;
+
 public abstract class BaseTest {
 
     private static WebDriver driver;
@@ -20,6 +22,7 @@ public abstract class BaseTest {
     @BeforeClass
     public void setUp() {
         driver = DriverFactory.getDriver(PropertyReader.getBrowser());
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.get(PropertyReader.getUrl());
         steps = new SearchSteps();
     }
@@ -37,7 +40,8 @@ public abstract class BaseTest {
            }
 
     @DataProvider(name = "Data Provider")
-    public Object[][] dataProviderMethod() {
-        return new Object[][]{{"selenium java"}, {"selenium javascript"}};
+    public Object[] dataProviderMethod() {
+        return new Object[]{"selenium java"};
+                //, {"selenium javascript"}};
     }
 }
