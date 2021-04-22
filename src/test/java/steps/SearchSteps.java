@@ -12,7 +12,6 @@ public class SearchSteps {
         SearchPage searchPage = new SearchPage();
         searchPage.fillTheSearchField(keyword);
         searchPage.pressEnter();
-
         return new SearchResultsSteps();
     }
 }

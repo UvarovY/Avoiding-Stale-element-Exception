@@ -22,7 +22,7 @@ public abstract class BaseTest {
     @BeforeClass
     public void setUp() {
         driver = DriverFactory.getDriver(PropertyReader.getBrowser());
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+      //  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.get(PropertyReader.getUrl());
         steps = new SearchSteps();
     }

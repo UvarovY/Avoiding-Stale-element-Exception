@@ -2,9 +2,10 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -17,13 +18,15 @@ public class SearchResultsPage extends BasePage {
     @FindBy(xpath = "//*[@class='LC20lb DKV0Md']")
     private List<WebElement> resultRows;
 
-    public SearchResultsPage(){
+    public SearchResultsPage() {
         super();
     }
 
-    public void assertThatTopResultContainsCorrectText(String text){
-        assertThat(resultRow.isDisplayed()).as("Element hasn't been displayed").isTrue();
-        assertThat(resultRows.stream().map(e->e.getText()).collect(Collectors.toList()).toString())
+    public void assertThatTopResultContainsCorrectText(String text) {
+        wait.until(ExpectedConditions.visibilityOfAllElements(resultRows));
+
+         assertThat(resultRow.isDisplayed()).as("Element hasn't been displayed").isTrue();
+        assertThat(resultRows.stream().map(e -> e.getText()).collect(Collectors.toList()).toString())
                 .as("Search result is wrong").contains(text);
 
     }
