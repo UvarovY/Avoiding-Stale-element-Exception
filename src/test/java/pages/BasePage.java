@@ -1,14 +1,14 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.*;
-
 import tests.BaseTest;
 
 import java.time.Duration;
+import java.util.List;
 
 public abstract class BasePage {
 
@@ -21,4 +21,14 @@ public abstract class BasePage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         //ленивая инициализация.
     }
+
+    boolean  isElementFound(By by, int timeout) throws InterruptedException{
+        List<WebElement> elements = driver.findElements(by);
+        for (int i =0; (i<timeout)&&(elements.size()==0); i++){
+            Thread.sleep(1000);
+            elements = driver.findElements(by);
+        }
+        return elements.size() > 0;
+    }
+
 }

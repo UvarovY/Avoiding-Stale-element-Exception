@@ -2,7 +2,6 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
@@ -24,11 +23,9 @@ public class SearchResultsPage extends BasePage {
 
     public void assertThatTopResultContainsCorrectText(String text) {
         wait.until(ExpectedConditions.visibilityOfAllElements(resultRows));
-
-         assertThat(resultRow.isDisplayed()).as("Element hasn't been displayed").isTrue();
+//        assertThat(resultRow.isDisplayed()).as("Element hasn't been displayed").isTrue();
         assertThat(resultRows.stream().map(e -> e.getText()).collect(Collectors.toList()).toString())
                 .as("Search result is wrong").contains(text);
-
     }
 
     public void assertThatTopResultContainsProperAttribyteText(String text) {

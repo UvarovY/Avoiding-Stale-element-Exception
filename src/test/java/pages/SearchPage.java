@@ -1,11 +1,10 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -14,6 +13,8 @@ public class SearchPage extends BasePage {
     @FindBy(xpath = "//input[@class='gLFyf gsfi']")
     private WebElement searchField;
 
+    @FindBy(name = "btnK")
+    private WebElement searchButton;
 
     public SearchPage() {
         super();
@@ -27,11 +28,16 @@ public class SearchPage extends BasePage {
         searchField.sendKeys(textToSearch);
     }
 
-
-
     public void pressEnter() {
         searchField.sendKeys(Keys.RETURN);
     }
 
-
+    public void clickSearchButtonOrPressEnter() throws InterruptedException {
+        if (isElementFound(By.name("btnK"), 3)) {
+            wait.until(ExpectedConditions.elementToBeClickable(searchButton));
+            searchButton.click();
+        } else {
+            pressEnter();
+        }
+    }
 }
