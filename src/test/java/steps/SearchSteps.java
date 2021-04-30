@@ -12,6 +12,8 @@ public class SearchSteps {
         SearchPage searchPage = new SearchPage();
         searchPage.fillTheSearchField(keyword);
         searchPage.clickSearchButtonOrPressEnter();
+        //searchPage.openNewTab();
+       // searchPage.pasteTextToElementFormClipBoard(keyword);
         return new SearchResultsSteps();
     }
 }
