@@ -46,15 +46,15 @@ public class SearchPage extends BasePage {
             pressEnter();
         }
     }
-
+/*
     public void openNewTab(){
         ((JavascriptExecutor)driver).executeScript("window.open()");
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
             driver.switchTo().window(tabs.get(1));
             driver.get("https://google.com");
-            driver.switchTo().window(tabs.get(0));
+          //  driver.switchTo().window(tabs.get(0));
         }
-
+*/
       public void pasteTextToElementFormClipBoard(String keyword){
         //copy text to memory buffer
           Toolkit toolkit = Toolkit.getDefaultToolkit();

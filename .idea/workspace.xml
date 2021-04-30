@@ -113,7 +113,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
-  <component name="RunManager" selected="TestNG.SearchTest (1)">
+  <component name="RunManager" selected="TestNG.SearchTest">
     <configuration name="SearchTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GoogleSearchTestAutomationFwk" />
       <extension name="coverage">
@@ -211,6 +211,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GoogleSearchTestAutomationFwk" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="tests.SearchTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="PARAMETERS" value=" " />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="tests" />
@@ -231,6 +250,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.&lt;default&gt;" />
         <item itemvalue="TestNG.SearchTest (1)" />
         <item itemvalue="TestNG.SearchTest.openGoogleChromeTest (1)" />
         <item itemvalue="TestNG.SearchTest.openGoogleChromeTest" />
@@ -349,11 +369,6 @@
           <properties class="java.lang.ClassFormatError" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/pages/BasePage.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
