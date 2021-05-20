@@ -57,4 +57,8 @@ public abstract class BasePage {
         // driver.switchTo().window(tabs.get(0));
     }
 
+    protected void clickWithJavaScript(WebElement element){
+        executor.executeScript("arguments[0].click()", element);
+    }
+
 }

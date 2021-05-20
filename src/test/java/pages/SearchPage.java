@@ -53,11 +53,11 @@ public class SearchPage extends BasePage {
         searchField.sendKeys(Keys.RETURN);
     }
 
-
     public void clickSearchButtonOrPressEnter() throws InterruptedException {
         if (isElementFound(By.name("btnK"), 3)) {
             wait.until(ExpectedConditions.elementToBeClickable(searchButton));
-            searchButton.click();
+            //searchButton.click();
+            clickWithJavaScript(searchButton);
         } else {
             pressEnter();
         }
