@@ -1,7 +1,6 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -41,7 +40,6 @@ public class SearchPage extends BasePage {
         Actions actions = new Actions(driver);
         actions.moveToElement(searchField).click().build().perform();
         searchField.clear();
-        JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].value = '" + textToSearch + "'", searchField);
         actions.sendKeys(Keys.ENTER).click().build().perform();
     }
@@ -66,13 +64,13 @@ public class SearchPage extends BasePage {
     }
 
 
-    public void moveToVoiceSearchButton(){
+    public void moveToVoiceSearchButton() {
         builder.moveToElement(searchByVoiceButton).build().perform();
     }
 
-    public void assertThatVoiceButtonToolTipContainsText(String text){
-        assertThat(pageBody.findElements(By.xpath("//*[contains(text(), '"+text+"')]")).size())
-                .as("Expected tooltip ["+text+"] was not found").isNotZero();
+    public void assertThatVoiceButtonToolTipContainsText(String text) {
+        assertThat(pageBody.findElements(By.xpath("//*[contains(text(), '" + text + "')]")).size())
+                .as("Expected tooltip [" + text + "] was not found").isNotZero();
     }
 
 
