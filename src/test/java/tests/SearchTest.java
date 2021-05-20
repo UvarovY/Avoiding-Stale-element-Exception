@@ -13,7 +13,7 @@ public class SearchTest extends BaseTest {
     }
 
     @Test
-    public void verifySearchByVoiceTooltipOnGoogle(){
+    public void verifySearchByVoiceTooltipOnGoogle() {
         steps.OpenTooltip()
                 .verifyThatTooltipContainsProperText("Пошук голосом");
     }

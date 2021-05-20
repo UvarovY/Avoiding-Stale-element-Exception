@@ -1,4 +1,5 @@
 package tests;
+
 import org.testng.annotations.Test;
 
 public class SearchTestWithJavaScript extends BaseTest {

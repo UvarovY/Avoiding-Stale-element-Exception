@@ -1,7 +1,6 @@
 package pages;
 
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -34,7 +33,7 @@ public class SearchResultsPage extends BasePage {
         assertThat(resultRow.getAttribute("class")).as("Wrong attribyte text").contains(text);
     }
 
-    public void assertThatTopResultContainsCorrectTextWithJavaScript(String text){
+    public void assertThatTopResultContainsCorrectTextWithJavaScript(String text) {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].evaluate = '" + text + "'");
 

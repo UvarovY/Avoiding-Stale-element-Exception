@@ -29,16 +29,16 @@ public abstract class BasePage {
 
     }
 
-    boolean  isElementFound(By by, int timeout) throws InterruptedException{
+    boolean isElementFound(By by, int timeout) throws InterruptedException {
         List<WebElement> elements = driver.findElements(by);
-        for (int i =0; (i<timeout)&&(elements.size()==0); i++){
+        for (int i = 0; (i < timeout) && (elements.size() == 0); i++) {
             Thread.sleep(1000);
             elements = driver.findElements(by);
         }
         return elements.size() > 0;
     }
 
-   protected void pasteTextToElementFromClipBoard(WebElement element, String keyword){
+    protected void pasteTextToElementFromClipBoard(WebElement element, String keyword) {
         //copy text to memory buffer
         Toolkit toolkit = Toolkit.getDefaultToolkit();
         Clipboard clipboard = toolkit.getSystemClipboard();
@@ -48,7 +48,7 @@ public abstract class BasePage {
         element.sendKeys(Keys.CONTROL, "v");
     }
 
-    public void openNewTab(){
+    public void openNewTab() {
         executor.executeScript("window.open()");
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
