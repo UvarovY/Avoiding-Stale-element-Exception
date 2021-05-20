@@ -10,10 +10,25 @@ public class SearchSteps {
     public SearchResultsSteps executeSearchByKeyword(String keyword) throws InterruptedException {
 
         SearchPage searchPage = new SearchPage();
-        searchPage.fillTheSearchField(keyword);
+        searchPage.pasteToSearchField(keyword);
         searchPage.clickSearchButtonOrPressEnter();
-      //  searchPage.openNewTab();
-      //  searchPage.pasteTextToElementFormClipBoard(keyword);
         return new SearchResultsSteps();
+    }
+
+    public SearchResultsSteps SearchResultsStepsWithJavaScript(String keyword) throws InterruptedException {
+        SearchPage searchPage = new SearchPage();
+        searchPage.openNewTab();
+        searchPage.fillTheSearchFieldWithActionsBuilder(keyword);
+        return new SearchResultsSteps();
+    }
+
+    public SearchSteps OpenTooltip(){
+        searchPage.moveToVoiceSearchButton();
+        return this;
+    }
+
+    public SearchSteps verifyThatTooltipContainsProperText(String text){
+        searchPage.assertThatVoiceButtonToolTipContainsText(text);
+        return this;
     }
 }

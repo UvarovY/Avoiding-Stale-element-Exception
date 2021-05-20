@@ -16,4 +16,9 @@ public class SearchResultsSteps {
         searchResultsPage.assertThatTopResultContainsProperAttribyteText(expectedValue);
         return this;
     }
+
+    public SearchResultsSteps verifyThatTopResultContainsCorrectTextWithJavaScript(String expectedValue){
+        searchResultsPage.assertThatTopResultContainsCorrectTextWithJavaScript(expectedValue);
+        return this;
+    }
 }

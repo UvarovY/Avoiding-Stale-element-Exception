@@ -11,4 +11,11 @@ public class SearchTest extends BaseTest {
                 .verifyThatTopResultContainsCorrectText("Selenium Webdriver")
                 .verifyThatTopResultContainsProperAttribute("LC20lb DKV0Md");
     }
+
+    @Test
+    public void verifySearchByVoiceTooltipOnGoogle(){
+        steps.OpenTooltip()
+                .verifyThatTooltipContainsProperText("Пошук голосом");
+    }
+
 }

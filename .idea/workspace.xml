@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="10711fa1-0355-47a7-8807-6e2b9ddfcf60" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SearchResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SearchResultsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/SearchResultsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/SearchResultsSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/SearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/SearchSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/SearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/SearchPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/SearchSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/SearchSteps.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="XML Properties File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -113,32 +116,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
-  <component name="RunManager" selected="TestNG.SearchTest">
-    <configuration name="SearchTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="GoogleSearchTestAutomationFwk" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SearchTest" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value=" " />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.SearchTestWithJavaScript.OpenGoogleChromeTestWithJavaScript">
     <configuration name="SearchTest" type="TestNG" nameIsGenerated="true">
       <module name="GoogleSearchTestAutomationFwk" />
       <option name="SUITE_NAME" value="" />
@@ -159,7 +137,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest.openGoogleChromeTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTestWithJavaScript.OpenGoogleChromeTestWithJavaScript" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GoogleSearchTestAutomationFwk" />
       <extension name="coverage">
         <pattern>
@@ -169,8 +147,8 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SearchTest" />
-      <option name="METHOD_NAME" value="openGoogleChromeTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.SearchTestWithJavaScript" />
+      <option name="METHOD_NAME" value="OpenGoogleChromeTestWithJavaScript" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value=" " />
@@ -185,7 +163,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest.openGoogleChromeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest.verifySearchByVoiceTooltipOnGoogle (3)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GoogleSearchTestAutomationFwk" />
       <extension name="coverage">
         <pattern>
@@ -196,7 +174,7 @@
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.SearchTest" />
-      <option name="METHOD_NAME" value="openGoogleChromeTest" />
+      <option name="METHOD_NAME" value="verifySearchByVoiceTooltipOnGoogle" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value=" " />
@@ -211,13 +189,72 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest.verifySearchByVoiceTooltipOnGoogle (4)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GoogleSearchTestAutomationFwk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.SearchTest" />
+      <option name="METHOD_NAME" value="verifySearchByVoiceTooltipOnGoogle" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value=" " />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchTest.verifySearchByVoiceTooltipOnGoogle (5)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GoogleSearchTestAutomationFwk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SearchTest" />
+      <option name="METHOD_NAME" value="verifySearchByVoiceTooltipOnGoogle" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value=" " />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchTest.verifySearchByVoiceTooltipOnGoogle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GoogleSearchTestAutomationFwk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SearchTest" />
+      <option name="METHOD_NAME" value="verifySearchByVoiceTooltipOnGoogle" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value=" " />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -250,10 +287,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.&lt;default&gt;" />
-        <item itemvalue="TestNG.SearchTest (1)" />
-        <item itemvalue="TestNG.SearchTest.openGoogleChromeTest (1)" />
-        <item itemvalue="TestNG.SearchTest.openGoogleChromeTest" />
+        <item itemvalue="TestNG.SearchTestWithJavaScript.OpenGoogleChromeTestWithJavaScript" />
+        <item itemvalue="TestNG.SearchTest.verifySearchByVoiceTooltipOnGoogle" />
+        <item itemvalue="TestNG.SearchTest.verifySearchByVoiceTooltipOnGoogle (5)" />
+        <item itemvalue="TestNG.SearchTest.verifySearchByVoiceTooltipOnGoogle (4)" />
+        <item itemvalue="TestNG.SearchTest.verifySearchByVoiceTooltipOnGoogle (3)" />
       </list>
     </recent_temporary>
   </component>
