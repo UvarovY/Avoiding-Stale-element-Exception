@@ -1,4 +1,4 @@
-There are several usefull fetures that I Used to use in while building test automation f-wks. 
+*There are several usefull fetures for avoiding stale element exaption wtih DOM structure.*
 
 
  /**
@@ -42,6 +42,7 @@ Here's an example of the code where this class can be used :
 	 * @param attribute			name of an attribute
 	 * @return attribute value	value that was in attribute
 	 */
+	 
 	public String getValueFromId(String id, String attribute) throws Exception {
         RetryStrategy retry = new RetryStrategy();
         WebElement element = null;
