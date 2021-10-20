@@ -30,3 +30,31 @@ There are several usefull fetures that I Used to use in while building test auto
             }
             attempts++;
         }
+
+
+This class gives you nice way of retrying some action several times to make sure that either works or not.
+Here's an example of the code where this class can be used :
+
+/**
+	 * Get value of an element using id
+	 * 
+	 * @param id				the location of the element
+	 * @param attribute			name of an attribute
+	 * @return attribute value	value that was in attribute
+	 */
+	public String getValueFromId(String id, String attribute) throws Exception {
+        RetryStrategy retry = new RetryStrategy();
+        WebElement element = null;
+        String result = null;
+        while(retry.shouldRetry()) {
+            try {
+                element = manager.getDriver().findElement(By.id(id));
+                result = element.getAttribute(attribute);
+                break;
+            } catch (StaleElementReferenceException e){
+                logger.warning("Got into StaleElement exception with id " + id);
+                retry.errorOccured(e);
+            }
+        }
+	return result;
+    } 
