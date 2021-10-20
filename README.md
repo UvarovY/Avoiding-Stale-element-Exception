@@ -59,3 +59,16 @@ Here's an example of the code where this class can be used :
         }
 	return result;
     } 
+    
+    Really simple insstance of metod which can help avoid Stale elemetn exaption
+    part of more complicated methods discrubed upper.
+    
+      public static void waitForElementPresent(By locator) {
+       // WebElement webElement = driver.findElement(locator);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+       // WebElement element = wait.until(ExpectedConditions.visibilityOf(webElement));
+       // wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+       // wait.until(ExpectedConditions.elementToBeClickable(locator));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+    }
